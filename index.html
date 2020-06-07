@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB1 - Welcome</title>
+        <meta charset="utf-8">
+        <script src="colors.js"></script>
+    </head>
+    <body>
+        <h1>
+            <a href="index.html">WEB</a>
+        </h1>
+        <input type="button" value="night" onclick="
+                                                    document.querySelector('body').style.backgroundColor='black';
+                                                    document.querySelector('body').style.color='white';
+                                                    ">
+        <input type="button" value="day" onclick="
+                                                  document.querySelector('body').style.backgroundColor='white';
+                                                  document.querySelector('body').style.color='black';
+                                                  ">
+        <input id="night_day" type="button" value="night" onclick="
+                                                                   if(document.querySelector('#night_day').value === 'night') {
+                                                                   document.querySelector('body').style.backgroundColor='black';
+                                                    document.querySelector('body').style.color='white';
+                                                                   document.querySelector('#night_day').value = 'day';
+                                                                   } else {
+                                                                   document.querySelector('body').style.backgroundColor='white';
+                                                  document.querySelector('body').style.color='black';
+                                                                   document.querySelector('#night_day').value = 'night';
+                                                                   }
+                                                                   ">
+        <h2>
+            HTML - 동영상 삽입
+        </h2>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tZooW6PritE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+    </body>
+</html>
