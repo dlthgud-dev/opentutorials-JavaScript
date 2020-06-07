@@ -3,25 +3,14 @@
     <head>
         <title>WEB1 - Welcome</title>
         <meta charset="utf-8">
-        <script src="colors.js"></script>
+        <script src="opentutorials-JavaScript/colors.js"></script>
     </head>
     <body>
         <h1>
             <a href="index.html">WEB</a>
         </h1>
         
-        <input id="night_day" type="button" value="night" onclick="
-                                                                   var target = document.querySelector('body');
-                                                                   if(this.value === 'night') {
-                                                                   target.style.backgroundColor='black';
-                                                    target.style.color='white';
-                                                                   this.value = 'day';
-                                                                   } else {
-                                                                   target.style.backgroundColor='white';
-                                                  target.style.color='black';
-                                                                   this.value = 'night';
-                                                                   }
-                                                                   ">
+        <input id="night_day" type="button" value="night" onclick="nightDayHandler(this);">
         <h2>
             HTML - 동영상 삽입
         </h2>
